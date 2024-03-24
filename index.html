@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(138, 44, 125);
+            background-size: cover;
+            background-position: center;
+
+        }
+        .form {
+            width: 420px;
+            background-color: transparent;
+            color: #bdaaaa;
+            border-radius: 18px;
+            padding: 90px 50px;
+            box-shadow: 20px 20px 20px 20px rgba(190, 186, 186, 0.1);
+        }
+        .form h1 {
+            font-size: 36px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        .form .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 36px 0px;
+        }
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(8, 1, 1, 0.2);
+            border-radius: 40px;
+            color: #fff;
+            font-size: 16px;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box::placeholder {
+            color: #fff;
+        }
+        ::placeholder{
+            color: rgb(145, 139, 139);
+        }
+        .form .btn {
+            width: 100%;
+            height: 45px;
+            background-color: #9b9b9b;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0px 0px 10px rgba(190, 186, 186, 0.1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 30%;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form">
+<form action="">
+    <h1>Login</h1>
+    <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bx-user-circle'></i>
+    </div>
+    <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock'></i>
+    </div>
+    <button type="submit" class="btn">Login</button>
+</form>
+    </div>
+</body>
+</html>
